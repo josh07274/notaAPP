@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NotepadMaui.EditNotePage"
+             BackgroundColor="Gainsboro">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="PageBackgroundColor">Gainsboro</Color>
+            <Color x:Key="PrimaryColor">#6B21A8</Color>
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="#1F2937" />
+                <Setter Property="FontSize" Value="16" />
+            </Style>
+            <Style TargetType="Entry">
+                <Setter Property="TextColor" Value="#1F2937" />
+                <Setter Property="FontSize" Value="16" />
+                <Setter Property="BackgroundColor" Value="White" />
+                <Setter Property="Margin" Value="5" />
+            </Style>
+            <Style TargetType="Editor">
+                <Setter Property="TextColor" Value="#1F2937" />
+                <Setter Property="FontSize" Value="16" />
+                <Setter Property="BackgroundColor" Value="White" />
+                <Setter Property="Margin" Value="5" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="20" Spacing="15">
+                <Label Text="Editar Nota" FontAttributes="Bold" FontSize="28" HorizontalOptions="Center" />
+
+                <Label Text="Título" FontSize="18" />
+                <Entry Text="{Binding Title}" Placeholder="Ingresa el título"
+                       PlaceholderColor="Gray"/>
+
+                <Label Text="Contenido" FontSize="18" />
+                <Editor Text="{Binding Content}"
+                        AutoSize="TextChanges"
+                        HeightRequest="200"
+                        Placeholder="Escribe el contenido de la nota..."
+                        PlaceholderColor="Gray"/>
+
+                <Button Text="Guardar"
+                        BackgroundColor="{StaticResource PrimaryColor}{StaticResource PrimaryColor}"
+                        TextColor="White"
+                        CornerRadius="8"
+                        Clicked="OnSaveClicked"
+                        Margin="0,20,0,0" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NotepadMaui.UserProfilePage"
+             BackgroundColor="Gainsboro">
+
+    <VerticalStackLayout Padding="40" Spacing="20">
+
+        <!-- Título -->
+        <Label Text="Perfil de Usuario" FontSize="24" FontAttributes="Bold"
+               TextColor="Black" HorizontalOptions="Center" />
+
+        <!-- Imagen de perfil -->
+        <Frame WidthRequest="120" HeightRequest="120" CornerRadius="60"
+       BackgroundColor="White" HorizontalOptions="Center" Padding="0">
+            <Image x:Name="ProfileImage" Aspect="AspectFill" WidthRequest="120" HeightRequest="120" 
+           HorizontalOptions="Center" VerticalOptions="Center" />
+        </Frame>
+
+        <!-- Mostrar nombre de usuario -->
+        <Label x:Name="UsernameLabel" FontSize="24" FontAttributes="Bold"
+               TextColor="Black" HorizontalOptions="Center" />
+
+        <!-- Botón para cambiar foto de perfil -->
+        <Button Text="Cambiar Foto de Perfil" FontSize="18" BackgroundColor="DarkGray"
+                TextColor="White" Clicked="OnChangeProfilePictureClicked"/>
+
+        <!-- Botón de cerrar sesión -->
+        <Button Text="Cerrar Sesión" FontSize="18" BackgroundColor="#6B21A8"
+                TextColor="White" Clicked="OnLogoutClicked"/>
+    </VerticalStackLayout>
+
+</ContentPage>

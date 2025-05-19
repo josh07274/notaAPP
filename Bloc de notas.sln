@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bloc de notas", "Bloc de notas.csproj", "{D3960004-D200-45D9-8882-F96345E7348E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3960004-D200-45D9-8882-F96345E7348E}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{D3960004-D200-45D9-8882-F96345E7348E}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{D3960004-D200-45D9-8882-F96345E7348E}.Debug|Any CPU.Deploy.0 = Release|Any CPU
+		{D3960004-D200-45D9-8882-F96345E7348E}.Release|Any CPU.ActiveCfg = Release|android
+		{D3960004-D200-45D9-8882-F96345E7348E}.Release|Any CPU.Build.0 = Release|android
+		{D3960004-D200-45D9-8882-F96345E7348E}.Release|Any CPU.Deploy.0 = Release|android
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD1497C2-F54C-4B10-9AF0-4E6CAF99BA53}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,30 @@
+{
+    "project_info": {
+        "project_number": "702370174823",
+        "firebase_url": "https://base-de-datos-usuarios-c9142-default-rtdb.firebaseio.com",
+        "project_id": "base-de-datos-usuarios-c9142",
+        "storage_bucket": "base-de-datos-usuarios-c9142.firebasestorage.app"
+    },
+    "client": [
+        {
+            "client_info": {
+                "mobilesdk_app_id": "1:702370174823:android:0fce5f911bb8b24156c1c2",
+                "android_client_info": {
+                    "package_name": "com.bloc.blocdenotas"
+                }
+            },
+            "oauth_client": [],
+            "api_key": [
+                {
+                    "current_key": "AIzaSyC4gnacg-nR3a8w0RZvxz6RfIRU89IghMQ"
+                }
+            ],
+            "services": {
+                "appinvite_service": {
+                    "other_platform_oauth_client": []
+                }
+            }
+        }
+    ],
+    "configuration_version": "1"
+}

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NotepadMaui.LoginPage"
+             BackgroundColor="Gainsboro">
+
+    <VerticalStackLayout  Spacing="20">
+
+        
+        <Image Source="logo.png" HeightRequest="100" HorizontalOptions="Center" />
+
+        
+        <Label Text="Iniciar sesión" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" TextColor="black" />
+
+        
+        <Entry x:Name="UsernameEntry" Placeholder="Usuario" PlaceholderColor="Gray" FontSize="18" 
+               BackgroundColor="White" TextColor="Black" />
+
+        
+        <Entry x:Name="PasswordEntry" Placeholder="Contraseña" PlaceholderColor="Gray" FontSize="18"
+               IsPassword="True" BackgroundColor="White" TextColor="Black" />
+
+        
+        <Button Text="Ingresar" FontSize="18" BackgroundColor="#6B21A8"
+                TextColor="White" Clicked="OnLoginClicked"/>
+
+        
+        <Label Text="¿No tienes cuenta? Regístrate aquí" FontSize="14" TextColor="Blue"
+               HorizontalOptions="Center">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnRegisterTapped" />
+            </Label.GestureRecognizers>
+        </Label>
+
+    </VerticalStackLayout>
+</ContentPage>
